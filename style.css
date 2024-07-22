@@ -1,0 +1,105 @@
+/* CSS 스타일 */
+/* 전체 */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  font-size: 32px;
+  background-color: #FFF8F0;
+}
+/* 계산기 전체 */
+.container{ 
+  display: flex;
+  border: 1px solid #E49E9A;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+/* 계산기 표시영역 */
+.calculator-container {
+  display: flex;
+  border: 1px solid #E49E9A;
+  border-radius: 40px;
+  width: 300px;
+  height: 450px;
+  flex-direction: column;
+  background-color: #F1CFC3
+}
+/* 계산기 숫자입력부 */
+.display{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 120px;
+  padding: 20px 20px 20px 0;
+  border: 1px solid #E49E9A;
+  border-radius: 40px 40px 0 0;
+  color: #888888;
+}
+/* 계산기 버튼입력부 */
+.calculator-buttons  {
+  display: flex;
+  /* flex: 70%; */
+  flex-direction: column;
+  padding: 10px;
+  border: 1px solid #E49E9A;
+  border-radius: 0 0 40px 40px;
+
+}
+/* 계산기 버튼 전체 */
+.buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* 계산기 버튼 하나하나 */
+.button {
+  height: 60px;
+  margin: 1%; 
+  font-size: 1.5rem;
+  border: 1px solid #E49E9A;
+  color: #888888;  
+}
+/* 기능, 연산, 숫자 버튼 */
+.function, .operator, .number, .C, .equal{
+  border-radius: 50%;
+  width: 60px;
+}
+
+/* 기능버튼 컬러 */
+.function{
+  background-color: #DDE3DB;
+}
+
+/* 연산버튼 컬러 */
+.operator{
+  background-color: #FFF1C0;
+}
+
+/* 숫자버튼 컬러 */
+.number, .zero{
+  background-color: #E5DEB2;
+}
+
+/* 0버튼 */
+.zero{
+  width: 133.5px;
+  height: 60px;
+  margin: 1%; 
+  font-size: 1.5rem;
+  border-radius: 60px;
+}
+
+/* hover 및 active (도전과제)*/
+.buttons :hover{
+  background-color: gray;
+  color: #FFFFFF
+}
+.buttons :active{
+  background-color: #A5A99B;
+  color: #FFFFFF;
+  border: 1px solid #FFFFFF;
+}
